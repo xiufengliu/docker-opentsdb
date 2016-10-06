@@ -16,10 +16,10 @@ RUN useradd opentsdb && \
     echo "34049cfc713e8b74b90d6de49690fa601dc040021980812b2f1f691534be8a50  /usr/sbin/gosu" | sha256sum -c && \
     chmod +x /usr/sbin/gosu
 
-RUN wget -O hbase-1.2.2.bin.tar.gz http://archive.apache.org/dist/hbase/1.2.2/hbase-1.2.2-bin.tar.gz && \
-    tar xzvf hbase-1.2.2.bin.tar.gz && \
-    mv hbase-1.2.2 /opt/hbase && \
-    rm hbase-1.2.2.bin.tar.gz
+RUN wget -O hbase-1.2.3.bin.tar.gz http://archive.apache.org/dist/hbase/1.2.3/hbase-1.2.3-bin.tar.gz && \
+    tar xzvf hbase-1.2.3.bin.tar.gz && \
+    mv hbase-1.2.3 /opt/hbase && \
+    rm hbase-1.2.3.bin.tar.gz
 
 RUN mkdir -p /data/hbase
  
